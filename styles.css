@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(226, 165, 51);
+  --bg-url: url(./assets/bifanas.jpg);
+  --navbar-bg-color: rgb(34, 34, 34);
+  --hiperlink-color-hover: rgba(255, 255, 255, 0.5);
+  --hiperlink-hover: rgb(125, 66, 23);
+  --sociallinks-hover: rgba(47, 47, 47, 0.725);
+  --text-color: white;
+}
+
+body {
+  background: var(--bg-url);
+  height: 100vh;
+}
+
+body * {
+  font-family: "Inter", serif;
+  color: var(--text-color);
+}
+.logo img {
+  width: 160px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.navbar {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 25%;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 3%;
+  justify-content: right;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar:hover{
+  background-color:rgba(220, 220, 220, 0.295) ;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background-color: var(--navbar-bg-color);
+  width: 100%;
+
+  border-top: 2px solid var(--navbar-bg-color);
+  border-radius: 1px;
+}
+
+ul {
+  margin-left: 1%;
+  list-style: none;
+  display: flex;
+  padding: 12px 0;
+  gap: 24px;
+}
+
+ul li a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  font-weight: 500;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 24px;
+
+  transition: background 0.3s;
+}
+
+ul li a:hover {
+  background-color: var(--sociallinks-hover);
+  border: 1.5px solid var(--sociallinks-hover);
+}
+
+#logo {
+  justify-content: left;
+  align-items: center;
+  padding: 24px;
+}
+.links {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.links a {
+  display: inline;
+  margin-right: 15px;
+  padding: 3px 10px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  transition: background 0.4s ease;
+}
+
+.links a:hover {
+  color: var(--hiperlink-color-hover);
+  border-bottom: var(--hiperlink-hover) solid 2px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* CONTEUDO */
