@@ -45,8 +45,8 @@ body * {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar:hover{
-  background-color:rgba(220, 220, 220, 0.295) ;
+.navbar:hover {
+  background-color: rgba(220, 220, 220, 0.295);
 }
 
 .navbar ul {
@@ -70,6 +70,20 @@ body * {
 
 .navbar ul li a:hover {
   color: #007bff;
+}
+
+#PEÇA {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0px;
+}
+
+#PEÇA:hover {
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  color: black;
+  transition: background 0.3s ease;
 }
 
 /* FOOTER */
